@@ -47,6 +47,11 @@ $config = [
             // determines if registration workflow includes email validation
             'validate' => true,
         ],
+        'Login' => [
+            'flashMessage' => false, // bool
+            'updateLastLogin' => true,
+            'lastLoginField' => 'last_login',
+        ],
         'Registration' => [
             // determines if the register is enabled
             'active' => true,
@@ -84,6 +89,7 @@ $config = [
         'Profile' => [
             // Allow view other users profiles
             'viewOthers' => true,
+            'contain' => [],
         ],
         'Key' => [
             'Session' => [

@@ -120,7 +120,7 @@ trait PasswordManagementTrait
                     }
                 }
             } catch (UserNotFoundException $exception) {
-                $this->Flash->error(__d('cake_d_c/users', 'User was not found'));
+                $this->Flash->error(__d('cake_d_c/users', 'User was not found 1'));
             } catch (WrongPasswordException $wpe) {
                 $this->Flash->error($wpe->getMessage());
             } catch (Exception $exception) {
@@ -175,7 +175,7 @@ trait PasswordManagementTrait
 
             return $this->redirect(['action' => 'login']);
         } catch (UserNotFoundException $exception) {
-            $this->Flash->error(__d('cake_d_c/users', 'User {0} was not found', $reference));
+            $this->Flash->error(__d('cake_d_c/users', 'If the account is valid, the system will send an instructional email to the address on record.'));
         } catch (UserNotActiveException $exception) {
             $this->Flash->error(__d('cake_d_c/users', 'The user is not active'));
         } catch (Exception $exception) {

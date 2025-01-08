@@ -120,7 +120,7 @@ trait PasswordManagementTrait
                     }
                 }
             } catch (UserNotFoundException $exception) {
-                $this->Flash->error(__d('cake_d_c/users', 'User was not found 1'));
+                $this->Flash->error(__d('cake_d_c/users', 'User was not found'));
             } catch (WrongPasswordException $wpe) {
                 $this->Flash->error($wpe->getMessage());
             } catch (Exception $exception) {

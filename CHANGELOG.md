@@ -2,6 +2,8 @@ Changelog
 =========
 Releases for CakePHP 5
 -------------
+* 14.3.2
+* Fix missing spanish translations
 * 14.3.1
   * Fix duplicated rule name in rules checker
 * 14.3.0
